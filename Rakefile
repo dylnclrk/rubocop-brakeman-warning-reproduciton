@@ -9,5 +9,5 @@ Rails.application.load_tasks
 
 if Rails.env.development? || Rails.env.test?
   Rake::Task[:default].clear_prerequisites
-  task default: %i[brakeman rubocop]
+  task default: %i[rubocop brakeman]
 end
